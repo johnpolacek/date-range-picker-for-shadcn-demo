@@ -3,10 +3,10 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Date Range Picker for shadcn',
-  description: 'Advanced Date Selection Component built with shadcn, offering an enhanced date selection experience with multi-month views, preset ranges, and date comparisons. Ideal for applications like dashboards, analytics reports or booking systems.',
+  description: 'Advanced Date Selection Component built for shadcn with multi-month views, text entry, preset ranges, and date comparisons. Ideal for applications like dashboards, analytics reports or booking systems.',
   openGraph: {
     title: 'Date Range Picker for shadcn',
-    description: 'Advanced Date Selection Component built with shadcn, offering an enhanced date selection experience with multi-month views, preset ranges, and date comparisons. Ideal for applications like dashboards, analytics reports or booking systems.',
+    description: 'Advanced Date Selection Component built for shadcn with multi-month views, text entry, preset ranges, and date comparisons. Ideal for applications like dashboards, analytics reports or booking systems.',
     url: 'https://date-range-picker-for-shadcn.vercel.app',
     siteName: 'Date Range Picker for shadcn',
     images: [
