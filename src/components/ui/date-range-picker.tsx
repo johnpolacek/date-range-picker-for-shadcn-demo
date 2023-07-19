@@ -431,7 +431,6 @@ export const DateRangePicker: FC<DateRangePickerProps> & {
                   }}
                   selected={range}
                   numberOfMonths={isSmallScreen ? 1 : 2}
-                  toMonth={now}
                   defaultMonth={
                     new Date(new Date().setMonth(new Date().getMonth() - (isSmallScreen ? 0 : 1)))
                   }
