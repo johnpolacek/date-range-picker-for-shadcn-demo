@@ -89,6 +89,29 @@ const DateInput: React.FC<DateInputProps> = ({ value, onChange }) => {
 
   const handleKeyDown =
     (field: keyof DateParts) => (e: React.KeyboardEvent<HTMLInputElement>) => {
+      // Allow command (or control) combinations
+      if (e.metaKey || e.ctrlKey) {
+        return;
+      }
+
+      // Prevent non-numeric characters, excluding allowed keys
+      if (
+        !/^[0-9]$/.test(e.key) &&
+        ![
+          'ArrowUp',
+          'ArrowDown',
+          'ArrowLeft',
+          'ArrowRight',
+          'Delete',
+          'Tab',
+          'Backspace',
+          'Enter',
+        ].includes(e.key)
+      ) {
+        e.preventDefault();
+        return;
+      }
+
       if (e.key === 'ArrowUp') {
         e.preventDefault()
         let newDate = { ...date }
